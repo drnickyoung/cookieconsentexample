@@ -1,5 +1,5 @@
 # Alternative Opt-in
-An alternative opt-in cookie consent derived from cookieconsent.insites.com
+An alternative opt-in cookie consent derived from cookieconsent.insites.com (see [https://github.com/insites/cookieconsent/](https://github.com/insites/cookieconsent/))
 
 So using the JavaScript API ([JavaScript API](http://cookieconsent.insites.com/documentation/javascript-api/)) I have created an alternative Opt-in. Please note this is a rough example and could (a) be enchanced and cleaned up and (b) probably added back into the original library as an alternative Opt-in method.
 
