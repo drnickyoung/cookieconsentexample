@@ -18,11 +18,10 @@ window.addEventListener("load", function(){
 	
 	/*
 	 * deleteCookies 
-	 * 		if allCookies is true it will delete all cookies
-	 *		if allCookies is false it will delete all cookies except those listed in the array essential
+	 * delete all cookies except those listed in the array essential
 	 */	
 	window.cookieconsent.Popup.prototype.deleteCookies = function() {
-		//List of essential cookies - set as an empty array
+		//List of essential cookies - set as an empty array to delete everything - i.e. var essential = [];
 		var essential = ["cookieconsent_status", "DYNSRV"];
 		
 		//create array of cookies set
@@ -90,6 +89,7 @@ window.addEventListener("load", function(){
 			}
 		},
 		onPopupOpen: function() {
+			// Get the elements with the allow and deny tages, i.e. the buttons 
 			var myAllow = document.getElementsByClassName("cc-allow")[0].classList;
 			var myDeny  = document.getElementsByClassName("cc-deny")[0].classList;
 
