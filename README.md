@@ -20,3 +20,7 @@ Once an option is selected there is a pop up, the revoke button, that lets you c
 ![](images/revoke_alt.png)
 
 I am not a GDPR expert, this is my understanding. It is down to you to check it covers the requirements.
+
+## How do I use it?
+
+This is based on [https://github.com/insites/cookieconsent/](https://github.com/insites/cookieconsent/) so first I would suggest taking a look at their documentation. Second look in the examples folder, there is basic HTML, CSS and JS files. Most should be easy to follow. 
