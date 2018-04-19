@@ -1,0 +1,22 @@
+/*
+ * Finding the revoke button randomly disappears.
+ */
+.cc-animate.cc-revoke.cc-bottom {
+    display: block !important;
+	border: 2px solid #008fbf;
+	border-bottom: none;
+}
+/*
+ * Formatting for selected option
+ */
+.cc-selected{
+    color: #000 !important;
+    background-color: #f1d600 !important;
+}
+/*
+ * Formatting for not selected option
+ */
+.cc-notselected{
+    color: #fff !important;
+    background-color: transparent !important;
+}
