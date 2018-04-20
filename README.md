@@ -21,7 +21,7 @@ Once an option is selected there is a pop up, the revoke button, that lets you c
 
 ![](images/revoke_alt.png)
 
-I am not a GDPR expert, this is my understanding. It is down to you to check it covers the requirements.
+I am not a GDPR expert, this is not a full solution, just an example. It is down to you to check it covers the requirements.
 
 ## How do I use it?
 
