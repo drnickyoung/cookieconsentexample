@@ -3,8 +3,8 @@ An alternative opt-in cookie consent derived from cookieconsent.insites.com (see
 
 **Please note**
 
-..* I have aimed this for site without any marketing, tracking or other cookies, just essential. 
-..* I am not a GDPR expert, this is not a full solution, just an example. Full requirements need you to get consent for each type of cooke you wish to set (marketing, analytics, etc.). It is down to you to check your implementation/use meets the requirements.
+* I have aimed this for site without any marketing, tracking or other cookies, just essential. 
+* I am not a GDPR expert, this is not a full solution, just an example. Full requirements need you to get consent for each type of cooke you wish to set (marketing, analytics, etc.). It is down to you to check your implementation/use meets the requirements.
 
 ## What is this example?
 So using the JavaScript API ([JavaScript API](http://cookieconsent.insites.com/documentation/javascript-api/)) I have created an alternative Opt-in. Please note this is a rough example and could **(a)** be enchanced and cleaned up and **(b)** possibly added back into the original library as an alternative Opt-in method.
