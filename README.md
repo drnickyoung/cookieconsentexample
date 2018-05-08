@@ -1,5 +1,5 @@
 # Alternative Opt-in
-An alternative opt-in cookie consent derived from cookieconsent.insites.com (see [https://github.com/insites/cookieconsent/](https://github.com/insites/cookieconsent/))
+An alternative opt-in cookie consent derived from cookieconsent.insites.com (see [https://github.com/insites/cookieconsent/](https://github.com/insites/cookieconsent/)).
 
 **Please note**
 
@@ -28,6 +28,13 @@ The second bit to this is that once an option is selected there is a pop up, the
 ## How do I use it?
 
 This is based on [https://github.com/insites/cookieconsent/](https://github.com/insites/cookieconsent/) so first I would suggest taking a look at their documentation. Second look in the examples folder, there is basic HTML, CSS and JS files. Most should be easy to follow. 
+
+## Other libraries
+
+* gdpr-cookie-notice (my version - [https://github.com/drnickyoung/gdpr-cookie-notice](https://github.com/drnickyoung/gdpr-cookie-notice) / (original version - [https://github.com/passatgt/gdpr-cookie-notice](https://github.com/passatgt/gdpr-cookie-notice))
+* gdpr-cookie - [https://github.com/southcoastweb/gdpr-cookie](https://github.com/southcoastweb/gdpr-cookie)
+* tarteaucitron - [https://github.com/AmauriC/tarteaucitron.js?files=1](https://github.com/AmauriC/tarteaucitron.js?files=1)
+* GDPR-Cookie-Compliance - [https://github.com/Jyxon/GDPR-Cookie-Compliance](https://github.com/Jyxon/GDPR-Cookie-Compliance)
 
 ## Disclaimer
 
