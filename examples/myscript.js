@@ -4,10 +4,10 @@ window.addEventListener("load", function(){
 	 */
 	window.cookieconsent.Popup.prototype.revokeChoice = function(preventOpen) {
 		this.options.enabled = true;
-		
+
 		//We don't want this next line as we want the button to pop up and allow us to change the settings.
 		//this.clearStatus();
-		
+
 		this.options.onRevokeChoice.call(this);
 
 		if (!preventOpen) {
@@ -15,29 +15,30 @@ window.addEventListener("load", function(){
 		}
 		this.open();
 	};
-	
+
 	/*
-	 * deleteCookies 
+	 * deleteCookies
 	 * delete all cookies except those listed in the array essential
-	 */	
+	 */
 	window.cookieconsent.Popup.prototype.deleteCookies = function() {
 		//List of essential cookies - set as an empty array to delete everything - i.e. var essential = [];
 		var essential = ["cookieconsent_status", "DYNSRV"];
-		
+
 		//create array of cookies set
 		var cookies = document.cookie.split(";");
-		
+
 		//loop through the cookies
 		for (var i = 0; i < cookies.length; i++) {
 			var cookie = cookies[i];
-			
+
 			//Get the cookie name
 			var eqPos = cookie.indexOf("=");
 			var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
-			
+
 			//Delete all cookies except those listed in essential
 			if (essential === undefined || essential.length == 0 || essential.indexOf(name) == -1){
-				document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
+				//Note assuming path is always = '/'
+				document.cookie = name + "=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/";
 			}
 		}
 	};
@@ -48,7 +49,7 @@ window.addEventListener("load", function(){
 	window.cookieconsent.initialise({
 		container: document.getElementsByTagName("body"),		//Change this to the element you wish
 		"cookie": {
-			"domain": "www.mydomain.co.uk",
+			"domain": "testing.vagrant",
 			"path": "/",
 			"expiryDays": 365,
 		},
@@ -63,14 +64,14 @@ window.addEventListener("load", function(){
 		"type": "opt-in",
 		"content": {
 			"dismiss": 'Got it!',					//ignored, left for completness
-			"deny": 'Decline unnecessary cookies',	
+			"deny": 'Decline unnecessary cookies',
 			"message": "This website uses necessary cookies to ensure you get the best experience on our website.",
-			"allow": "Allow cookies",				
+			"allow": "Allow cookies",
 			"link": "Learn more",
 			"href": "http://www.mydomain.co.uk/cookies",
 		},
 		compliance: {
-			/* 
+			/*
 			 * Alter the message to show {{deny}} instead of {{dismiss}}
 			 */
 			'opt-in': '<div class="cc-compliance cc-highlight">{{deny}}{{allow}}</div>',
@@ -89,7 +90,7 @@ window.addEventListener("load", function(){
 			}
 		},
 		onPopupOpen: function() {
-			// Get the elements with the allow and deny tages, i.e. the buttons 
+			// Get the elements with the allow and deny tages, i.e. the buttons
 			var myAllow = document.getElementsByClassName("cc-allow")[0].classList;
 			var myDeny  = document.getElementsByClassName("cc-deny")[0].classList;
 
@@ -106,7 +107,7 @@ window.addEventListener("load", function(){
 			}
 		},
 		onRevokeChoice: function() {
-			//
+			//Put YOUR code here to delete, remove, edit (whatever) cookies.
 		},
 		law: {
 			regionalLaw: true,
