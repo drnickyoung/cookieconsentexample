@@ -36,6 +36,11 @@ This is based on [https://github.com/insites/cookieconsent/](https://github.com/
 * tarteaucitron - [https://github.com/AmauriC/tarteaucitron.js?files=1](https://github.com/AmauriC/tarteaucitron.js?files=1)
 * GDPR-Cookie-Compliance - [https://github.com/Jyxon/GDPR-Cookie-Compliance](https://github.com/Jyxon/GDPR-Cookie-Compliance)
 
+## NOTE
+
+* When deleting cookies I assume the path is '/' - you may have to change this to match your path.
+* You need to set your domain and run the script from a server.
+
 ## Disclaimer
 
 I am not a GDPR expert, this is not a full solution, just an example. Full requirements need you to get consent for each type of cookie you wish to set (marketing, analytics, etc.). It is down to you to check your implementation/use meets the requirements.
